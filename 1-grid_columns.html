@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+</head>
+<style>
+  .grid{
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: 200px auto 200px; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-columns: repeat(3, auto); */
+    /* grid-template-columns: repeat(3, 200px); */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1rem;
+
+  }
+  .item{
+    padding: 3rem;
+    border: 1px solid #ccc;
+    background: #f4f4f4;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1.5rem;
+
+  }
+</style>
+<body>
+  <div class="grid">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+    <div class="item">item 5</div>
+    <div class="item">item 6</div>
+  </div>
+
+  <main>
+    <section>
+      <h3>Welcome to My Site</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eveniet iste rerum sapiente nulla, aliquam assumenda numquam tempore consectetur quibusdam blanditiis eius aliquid, eaque mollitia? Sed vel exercitationem ad aliquid.</p>
+    </section>
+    <aside>
+      <h3>hello there</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cumque enim molestias. Doloribus neque quis omnis ipsa veniam consectetur blanditiis, pariatur id iure. Fugit, iure debitis modi autem consequatur enim sint ut, odit quis, qui rem voluptatem? Nobis, voluptatum neque.</p>
+    </aside>
+  </main>
+</body>
+</html>
